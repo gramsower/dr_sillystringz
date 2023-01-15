@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using Factory.Models;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Factory.Controllers
 {
-  public class HomeController : Controllers
+  public class HomeController : Controller
   {
     public readonly FactoryContext _db;
     public HomeController(FactoryContext db)
