@@ -12,7 +12,6 @@ namespace Factory.Models
 
     [Required(ErrorMessage = "You must enter details about the Engineer.")]
     public string EngineerDetails { get; set; }
-    
     public List<EngineerMachine> JoinEntities { get; }
   }
 }
