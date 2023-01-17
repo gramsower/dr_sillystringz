@@ -1,5 +1,5 @@
 @{
-  Layout="_Layout";
+  Layout = "_Layout";
 }
 
 @using Factory.Models
@@ -21,7 +21,7 @@ else
   @foreach(EngineerMachine join in Model.JoinEntities)
   {
     <li>Machine: @join.Machine.MachineName</li>
-    @using (Html.BeginForm("DeleteJoin", "Machines"))
+    @using (Html.BeginForm("DeleteJoin", "Engineers"))
     {
       @Html.Hidden("joinId", @join.EngineerMachineId)
       <input type="submit" value="Delete" />
@@ -30,6 +30,6 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Back to Engineers", "Index")</p>
+<p>@Html.ActionLink("View All Engineers", "Index")</p>
 <p>@Html.ActionLink("Add a Machine to this Engineer", "AddMachine", new { id = Model.EngineerId })</p>
 <p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
