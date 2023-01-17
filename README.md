@@ -18,13 +18,13 @@ Created for Epicodus Code Review #11
 ### Description
 * This web-based application allows the user to add engineers and machines to a database.
 * Within the app, the user can:
-- Add and delete engineers
-- Add and delete machines
-- Assign engineers to one or machine, or, conversely, one or more machines to an engineer
-- Add details for each engineer and machine
-- View a list of all engineers
-- View a list of all machines
-- View a list of which machine(s) is/are assigned to a given engineer, or, conversely, which engineer(s) is/are assigned to a given machine
+  - Add and delete engineers
+  - Add and delete machines
+  - Assign engineers to one or machine, or, conversely, one or more machines to an engineer
+  - Add details for each engineer and machine
+  - View a list of all engineers
+  - View a list of all machines
+  - View a list of which machine(s) is/are assigned to a given engineer, or, conversely, which engineer(s) is/are assigned to a given machine
 
 ### Application Instructions
 * NOTE: In order to run this application, you will need to ensure the following software packages are installed locally:
