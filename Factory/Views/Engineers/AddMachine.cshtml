@@ -4,9 +4,9 @@
 
 @model Factory.Models.Engineer
 
-<h2>Assign a machine</h2>
+<h2>Assign a Machine</h2>
 
-<h4>Assign a machine to this Engineer: @Html.DisplayFor(model => model.EngineerName)</h4>
+<h4>Assign a Machine to this Engineer: @Html.DisplayFor(model => model.EngineerName)</h4>
 
 @using (Html.BeginForm())
 {
@@ -18,4 +18,4 @@
     <input type="submit" value="Save" />
 }
 
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Back to Engineer list", "Index")</p>

@@ -4,9 +4,9 @@
 
 @model Factory.Models.Machine
 
-<h2>Edit</h2>
+<h2>@Html.DisplayFor(model => model.MachineName)</h2>
 
-<h4>Edit this machine: @Html.DisplayFor(model => model.MachineName)</h4>
+<h4>Edit this machine</h4>
 
 @using (Html.BeginForm())
 {
@@ -19,3 +19,4 @@
 }
 
 <p>@Html.ActionLink("Back to machine list", "Index")</p>
+<p>@Html.ActionLink("Assign Engineer to Machine", "AddEngineer", new { id = Model.MachineId })</p>
